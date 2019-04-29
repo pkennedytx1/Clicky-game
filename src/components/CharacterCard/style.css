@@ -1,0 +1,32 @@
+.card {
+    background: #fff;
+    border-radius: 6px;
+    border: solid 2px black;
+    height: 150px;
+    margin: 10px;
+    position: relative;
+    width: 150px;
+    text-align: left;
+    transition: 0.1s ease;
+  }
+
+  .card > .img-container {
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    background:#6CADDC;
+  }
+  .card > .img-container > img {
+    width: 100%
+  }
+
+  img {
+    border-radius: 4px;
+  }
+
+  .card:hover {
+    height: 160px;
+    width: 160px;
+    margin: 5px;
+    cursor: pointer;
+  }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import characters from "./characters.json";
 import CharacterCard from "./components/CharacterCard";
-import Wrapper from "./components/Wrapper";
+import Wrapper from "./components/Wrapper/index.js";
 
 class Character extends Component {
     state = {
