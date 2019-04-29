@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Aang",
+        "image": "https://imgix.ranker.com/node_img/20/387151/original/aang-film-characters-photo-1?w=87&h=87&fit=crop&crop=faces&q=60&fm=pjpg"
+    },
+    {
+        "id": 2,
+        "name": "Azula",
+        "image": "./images/azula.png"
+    },
+    {
+        "id": 3,
+        "name": "Boomi",
+        "image": "./images/boomi.png"
+    },
+    {
+        "id": 4,
+        "name": "Gow",
+        "image": "./images/gow.png"
+    },
+    {
+        "id": 5,
+        "name": "Iroh",
+        "image": "./images/iroh.png"
+    },
+    {
+        "id": 6,
+        "name": "Katara",
+        "image": "./images/katara.png"
+    },
+    {
+        "id": 7,
+        "name": "Long-Feng",
+        "image": "./images/long-feng.png"
+    },
+    {
+        "id": 8,
+        "name": "Mai",
+        "image": "./images/mai.png"
+    },
+    {
+        "id": 9,
+        "name": "Momo",
+        "image": "images/momo.png"
+    },
+    {
+        "id": 10,
+        "name": "Oppa",
+        "image": "image/oppa.png"
+    },
+    {
+        "id": 11,
+        "name": "Ozai",
+        "image": "./images/ozai.png"
+    },
+    {
+        "id": 12,
+        "name": "Sakka",
+        "image": "./images/sakka.png"
+    },
+    {
+        "id": 13,
+        "name": "Suki",
+        "image": "./images/suki.png"
+    },
+    {
+        "id": 14,
+        "name": "Tai-Lee",
+        "image": "./images/tai-lee.png"
+    },
+    {
+        "id": 15,
+        "name": "Taugh",
+        "image": "./images/taugh.png"
+    },
+    {
+        "id": 16,
+        "name": "Zuko",
+        "image": "./images/zuko.png"
+    }
+]
