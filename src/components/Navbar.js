@@ -8,10 +8,10 @@ function Navbar (props) {
             </a>
             <ul className="nav">
                 <li className="nav-item">
-                    <h3 className="nav-link"><strong>Score: </strong></h3>
+                    <h3 className="nav-link"><strong>Score: {props.score}</strong></h3>
                 </li>
                 <li className="nav-item">
-                    <h3 className="nav-link"><strong>High-Score: </strong></h3>
+                    <h3 className="nav-link"><strong>High-Score: {props.highScore}</strong></h3>
                 </li>
             </ul>
         </nav>
