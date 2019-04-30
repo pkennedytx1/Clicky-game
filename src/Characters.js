@@ -24,11 +24,13 @@ class Character extends Component {
         score: 0,
         highScore: 0,
         gameOver: false,
-        selectedCharacters: []
+        selectedCharacters: [],
+        gameMessage: ""
     };
 
     componentDidMount() {
         // neeed to figure out to put on the on mount function
+        this.setState({gameMessage: "Please Click a Character to Begin the Game!"})
     }
 
     characterSelected = (id) => {
@@ -91,7 +93,7 @@ class Character extends Component {
                 score={this.state.score}
                 highScore={this.state.highScore}
             />
-            <Jumbotron />
+            <Jumbotron/>
             <Wrapper>
                 {this.state.characters.map(character => (
                     <CharacterCard 

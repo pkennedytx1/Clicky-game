@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar (props) {
     return (
-        <nav className="navbar navbar-dark bg-primary ">
+        <nav className="navbar sticky-top navbar-dark bg-primary">
             <a className="navbar-brand" href="/">
                 <h3><strong>Avatar Memory Game</strong></h3>
             </a>

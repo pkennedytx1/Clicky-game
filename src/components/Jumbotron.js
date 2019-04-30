@@ -5,7 +5,7 @@ function Jumbotron() {
         <div className="jumbotron jumbotron-fluid bg-white text-center">
             <div className="container">
                 <h1 className="display-4">Avatar the Last Airbender Memory Game</h1>
-                <p className="lead">Click a character to begin! Try to remember which characters you have clicked and which ones you haven't!</p>
+                <p className="lead">Try to remember which characters you have clicked and which ones you haven't!</p>
             </div>
         </div>
     )
