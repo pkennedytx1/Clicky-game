@@ -27,6 +27,10 @@ class Character extends Component {
         selectedCharacters: []
     };
 
+    componentDidMount() {
+        // neeed to figure out to put on the on mount function
+    }
+
     characterSelected = (id) => {
         if(!this.state.selectedCharacters.includes(id)) {
             console.log('This Character is Selected');
