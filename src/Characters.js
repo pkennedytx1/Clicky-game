@@ -4,6 +4,7 @@ import CharacterCard from "./components/CharacterCard";
 import Wrapper from "./components/Wrapper/index.js";
 import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
+import Alert from "./components/Alert";
 
 // Function for randomizing the cards
 const randomizeCards = (array) => {
@@ -25,22 +26,31 @@ class Character extends Component {
         highScore: 0,
         gameOver: false,
         selectedCharacters: [],
-        gameMessage: ""
+        alertType: "alert alert-primary",
+        alertMessage: "Please click a character to begin!",
+        successMessageCounter: 0
     };
 
     componentDidMount() {
         // neeed to figure out to put on the on mount function
-        this.setState({gameMessage: "Please Click a Character to Begin the Game!"})
     }
 
     characterSelected = (id) => {
+        let counter = this.state.successMessageCounter;
         if(!this.state.selectedCharacters.includes(id)) {
-            console.log('This Character is Selected');
             this.scoreIncrement();
             this.state.selectedCharacters.push(id);
             this.setState({ gameOver: false })
+            this.setState({alertType: "alert alert-success"})
+            
+            // Code for Success Messages
+            const allMessages =["Good job!", "Well done!", "One more down.", "Flameo!", "Nice one!", "Good memory!", "Wow, impressive", "Don't get cocky now!", "I'm impressed", "You might give guru Patik a run for his money!", "Getting harder?", "Just a few more!", "Dont't forget anyone!", "So, close!", "Avatar memory state!", "Last one!"];
+            let selectedMessage = [allMessages[counter]]
+            this.setState({alertMessage: selectedMessage})
+            this.setState({successMessageCounter: this.state.successMessageCounter + 1})
         } else {
-            console.log('This character was already selected');
+            this.setState({alertType: "alert alert-danger"})
+            this.setState({alertMessage: "Sorry, you already guessed this chracter. Please click a character to restart the game!"})
             this.newGame();
         }
     }
@@ -76,7 +86,8 @@ class Character extends Component {
             highScore: this.state.highScore,
             selectedCharacters: [],
             characters,
-            gameOver: true
+            gameOver: true,
+            successMessageCounter: 0,
         });
         this.resetCharacterCards();
     }
@@ -94,6 +105,10 @@ class Character extends Component {
                 highScore={this.state.highScore}
             />
             <Jumbotron/>
+            <Alert 
+                alertType={this.state.alertType}
+                alertMessage={this.state.alertMessage}
+            />
             <Wrapper>
                 {this.state.characters.map(character => (
                     <CharacterCard 
