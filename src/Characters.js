@@ -5,6 +5,7 @@ import Wrapper from "./components/Wrapper/index.js";
 import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
 import Alert from "./components/Alert";
+import Links from "./components/Links";
 
 // Function for randomizing the cards
 const randomizeCards = (array) => {
@@ -44,7 +45,7 @@ class Character extends Component {
             this.setState({alertType: "alert alert-success"})
             
             // Code for Success Messages
-            const allMessages =["Good job!", "Well done!", "One more down.", "Flameo!", "Nice one!", "Good memory!", "Wow, impressive", "Don't get cocky now!", "I'm impressed", "You might give guru Patik a run for his money!", "Getting harder?", "Just a few more!", "Dont't forget anyone!", "So, close!", "Avatar memory state!", "Last one!"];
+            const allMessages =["Good job!", "Well done!", "One more down.", "Flameo!", "Nice one!", "Good memory!", "Wow, impressive", "Don't get cocky now!", "I'm impressed", "You might give guru Patik a run for his money!", "Getting harder?", "Just a few more!", "Dont't forget anyone!", "So, close!", "Avatar memory state!", "Goodjob! You got them all! Click a character to play again!"];
             let selectedMessage = [allMessages[counter]]
             this.setState({alertMessage: selectedMessage})
             this.setState({successMessageCounter: this.state.successMessageCounter + 1})
@@ -120,6 +121,7 @@ class Character extends Component {
                     />
                 ))}
             </Wrapper>
+            <Links />
             </div>
         )
     }
