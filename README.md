@@ -30,4 +30,6 @@ The game loads the characters from a JSON file. From that data a card is generat
 
 As you play you will notice a banner on top of the game which will change text as you play. 
 
+![Showing the banner changing as you play](https://media.giphy.com/media/yv10heNexBjhUSpPhD/giphy.gif)
+
 Also note that when you play your score will increase. Once you hit a wrong character it will reset your score to 0 and you highscore will remain.
