@@ -33,3 +33,9 @@ As you play you will notice a banner on top of the game which will change text a
 ![Showing the banner changing as you play](https://media.giphy.com/media/yv10heNexBjhUSpPhD/giphy.gif)
 
 Also note that when you play your score will increase. Once you hit a wrong character it will reset your score to 0 and you highscore will remain.
+
+![Showing the score functionality](https://media.giphy.com/media/iYmMNe3atWheuPLUE2/giphy.gif)
+
+## Notable Parts of the Project
+
+The most difficulat thing about this project was by far getting the props passing correctly to the elements. Also, creating the randomization function to change the cards position by index was challenging. The score calculator took some tinkering as well. I think the most notable feature from this whole project is rendering multiple cards from a json file. The data is far more compressed in a JSON and being able to mak through that data rather than saving a card for each character can save alot of memory and space when loading a web applicatoin. Some uses of this would be a product site which would could load information about multiple products simply using one card component.
